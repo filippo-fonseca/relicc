@@ -4,7 +4,6 @@ import 'components/BackgroundImage.dart';
 import 'components/TopIcon.dart';
 import 'components/GradientWithOpacity.dart';
 import 'constants.dart';
-import 'components/BottomNavBar.dart';
 import 'components/DataDisplay.dart';
 import 'functionality.dart';
 
@@ -20,19 +19,7 @@ class SculpturePage extends StatelessWidget {
             appBar: AppBar(
               backgroundColor: Colors.transparent,
               shadowColor: Colors.transparent,
-              leading: TopIcon(
-                size: 30,
-                icon: ReliccIcons.menu,
-                padding: EdgeInsets.only(left: 20),
-              ),
               title: Text(kAppBarTitle, style: kAppBarTextStyle),
-              actions: [
-                TopIcon(
-                  size: 29,
-                  icon: ReliccIcons.mags,
-                  padding: EdgeInsets.only(right: 24),
-                ),
-              ],
             ),
             body: SafeArea(
               child: ListView.builder(
