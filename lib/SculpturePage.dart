@@ -6,6 +6,7 @@ import 'components/GradientWithOpacity.dart';
 import 'constants.dart';
 import 'components/BottomNavBar.dart';
 import 'components/DataDisplay.dart';
+import 'functionality.dart';
 
 class SculpturePage extends StatelessWidget {
   @override
@@ -33,7 +34,20 @@ class SculpturePage extends StatelessWidget {
                 ),
               ],
             ),
-            body: ,
+            body: SafeArea(
+              child: ListView.builder(
+                itemBuilder: (_, index) {
+                  return DisplayData(
+                    url: database[index].url,
+                    artist: database[index].artist,
+                    artwork: database[index].artwork,
+                    image: index,
+                  );
+                },
+                scrollDirection: Axis.horizontal,
+                itemCount: database.length,
+              ),
+            ),
           ),
         ),
       ),

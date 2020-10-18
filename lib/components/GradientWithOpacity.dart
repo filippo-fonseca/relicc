@@ -14,7 +14,7 @@ class GradientWithOpacity extends StatelessWidget {
           colors: [
             Color(0xff635b52).withOpacity(0),
             Color(0xff635b52).withOpacity(0.6),
-            Color(0xff433D37).withOpacity(0.9),
+            Color(0xff433D37).withOpacity(0.6),
             Color(0xff1D1C1B).withOpacity(0.9),
             Color(0xff100F10),
           ],
