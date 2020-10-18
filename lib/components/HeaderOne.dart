@@ -13,7 +13,10 @@ class HeaderOne extends StatelessWidget {
     return Text(
       artwork,
       style: TextStyle(
-          color: Color(0xffF5E9DD), fontSize: 40, fontFamily: "Ayar Juno"),
+        color: Color(0xffF5E9DD),
+        fontSize: 40,
+        fontFamily: "Ayar Juno",
+      ),
     );
   }
 }

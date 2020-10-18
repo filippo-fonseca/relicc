@@ -9,7 +9,7 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 120,
+      height: 110,
       color: Colors.red,
       child: SafeArea(
         child: Container(
